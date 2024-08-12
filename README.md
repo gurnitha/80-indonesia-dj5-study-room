@@ -17,3 +17,8 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
         new file:   venv312507/Scripts/python.exe
         new file:   venv312507/Scripts/pythonw.exe
         new file:   venv312507/pyvenv.cfg
+
+#### 2. Menginstal Django versi 5.0.7
+
+        modified:   .gitignore
+        modified:   README.md

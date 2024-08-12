@@ -22,3 +22,6 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
 
         modified:   .gitignore
         modified:   README.md
+
+
+## 2. PROYEK

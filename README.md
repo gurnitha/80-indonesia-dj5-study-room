@@ -25,3 +25,24 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
 
 
 ## 2. PROYEK
+
+#### 1. Menginisiasi proyek Django
+
+        config
+        ├── config
+        │   ├── __init__.py
+        │   ├── asgi.py
+        │   ├── settings.py
+        │   ├── urls.py
+        │   └── wsgi.py
+        └── manage.py
+
+        1 directory, 6 files
+
+        modified:   README.md
+        new file:   config/config/__init__.py
+        new file:   config/config/asgi.py
+        new file:   config/config/settings.py
+        new file:   config/config/urls.py
+        new file:   config/config/wsgi.py
+        new file:   config/manage.py

@@ -177,4 +177,7 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
         Successfully installed mysqlclient-2.2.4
 
         (venv312507) λ python manage.py check
-        System check identified no issues (0 silenced).
+        System check identified no issues (0 silenced)
+
+
+## 5. SUPERUSER ADMIN 

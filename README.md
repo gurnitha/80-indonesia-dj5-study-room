@@ -288,3 +288,25 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
         |  1 | superuser | superuser@mail.com |
         +----+-----------+--------------------+
         1 row in set (0.00 sec)
+
+#### 3. Login superuser
+
+        (venv312507) λ python manage.py runserver
+        Watching for file changes with StatReloader
+        Performing system checks...
+
+        System check identified no issues (0 silenced).
+        August 13, 2024 - 11:19:14
+        Django version 5.0.7, using settings 'config.settings'
+        Starting development server at http://127.0.0.1:8000/
+        Quit the server with CTRL-BREAK.
+
+        # Update data superuser
+
+        mysql> SELECT id, username, email, first_name, last_name FROM auth_user;
+        +----+-----------+--------------------+------------+-----------+
+        | id | username  | email              | first_name | last_name |
+        +----+-----------+--------------------+------------+-----------+
+        |  1 | superuser | superuser@mail.com | super      | user      |
+        +----+-----------+--------------------+------------+-----------+
+        1 row in set (0.00 sec)

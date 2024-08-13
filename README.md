@@ -46,3 +46,20 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
         new file:   config/config/urls.py
         new file:   config/config/wsgi.py
         new file:   config/manage.py
+
+#### 2. Menjalankan development server 
+
+#### 3. Melihat tampilan default laman Django 
+
+#### 4. Mencoba mengakses admin panel menggunakan default urls 
+
+#### 5. Mengaktifkan aplikasi default bawaan Django 
+
+#### 6. Membuat superuser
+
+#### 7. Login menggunakan kredensial superuser
+
+#### 8. Mengeksplor admin panel dengan mengupdate data superuser 
+
+
+## 3. SETTING

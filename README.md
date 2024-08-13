@@ -216,3 +216,75 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
           Applying auth.0011_update_proxy_permissions... OK
           Applying auth.0012_alter_user_first_name_max_length... OK
           Applying sessions.0001_initial... OK
+
+        mysql> USE 80_indonesia_dj5_study_room;
+        Database changed
+        mysql> SHOW tables;
+        +---------------------------------------+
+        | Tables_in_80_indonesia_dj5_study_room |
+        +---------------------------------------+
+        | auth_group                            |
+        | auth_group_permissions                |
+        | auth_permission                       |
+        | auth_user                             |
+        | auth_user_groups                      |
+        | auth_user_user_permissions            |
+        | django_admin_log                      |
+        | django_content_type                   |
+        | django_migrations                     |
+        | django_session                        |
+        +---------------------------------------+
+        10 rows in set (0.15 sec)
+
+        mysql> DESC auth_user;
+        +--------------+--------------+------+-----+---------+----------------+
+        | Field        | Type         | Null | Key | Default | Extra          |
+        +--------------+--------------+------+-----+---------+----------------+
+        | id           | int          | NO   | PRI | NULL    | auto_increment |
+        | password     | varchar(128) | NO   |     | NULL    |                |
+        | last_login   | datetime(6)  | YES  |     | NULL    |                |
+        | is_superuser | tinyint(1)   | NO   |     | NULL    |                |
+        | username     | varchar(150) | NO   | UNI | NULL    |                |
+        | first_name   | varchar(150) | NO   |     | NULL    |                |
+        | last_name    | varchar(150) | NO   |     | NULL    |                |
+        | email        | varchar(254) | NO   |     | NULL    |                |
+        | is_staff     | tinyint(1)   | NO   |     | NULL    |                |
+        | is_active    | tinyint(1)   | NO   |     | NULL    |                |
+        | date_joined  | datetime(6)  | NO   |     | NULL    |                |
+        +--------------+--------------+------+-----+---------+----------------+
+        11 rows in set (0.16 sec)
+
+        mysql> SELECT * FROM user_auth;
+        ERROR 1146 (42S02): Table '80_indonesia_dj5_study_room.user_auth' doesn't exist
+        mysql> SELECT * FROM auth_user;
+        Empty set (0.00 sec)
+
+#### 2. Membuat superuser
+
+        C:\Users\ING\Desktop\80-indonesia-dj5-study-room\src(main -> origin)
+        (venv312507) λ python manage.py createsuperuser
+        Nama pengguna (leave blank to use 'ing'): superuser
+        Alamat email: superuser@mail.com
+        Password:
+        Password (again):
+        Kata sandi terlalu mirip dengan alamat email.
+        Bypass password validation and create user anyway? [y/N]: y
+        Superuser created successfully.
+
+        mysql> SELECT * FROM auth_user;
+        +----+------------------------------------------------------------------------------------------+------------+--------------+-----------+------------+-----------+--------------------+----------+-----------+----------------------------+
+        | id | password
+                | last_login | is_superuser | username  | first_name | last_name | email
+              | is_staff | is_active | date_joined                |
+        +----+------------------------------------------------------------------------------------------+------------+--------------+-----------+------------+-----------+--------------------+----------+-----------+----------------------------+
+        |  1 | pbkdf2_sha256$720000$EHrGsaBwjGfYus2na0sODF$ZKOUl1oC6fvCU2lAngaqrgPN7VsrKFXc0uIxsx/EBbU= | NULL       |            1 | superuser |            |           | superuser@mail.com |        1 |         1 | 2024-08-13 04:15:55.532943 |
+        +----+------------------------------------------------------------------------------------------+------------+--------------+-----------+------------+-----------+--------------------+----------+-----------+----------------------------+
+        1 row in set (0.00 sec)
+
+        mysql> SELECT id, username, email FROM auth_user;
+        +----+-----------+--------------------+
+        | id | username  | email              |
+        +----+-----------+--------------------+
+        |  1 | superuser | superuser@mail.com |
+        +----+-----------+--------------------+
+        1 row in set (0.00 sec)

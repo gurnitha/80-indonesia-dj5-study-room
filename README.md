@@ -165,3 +165,16 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
         ...
         django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
         Did you install mysqlclient?
+
+#### 3. Menginstal MySQL driver (mysqlclient)
+
+        C:\Users\ING\Desktop\80-indonesia-dj5-study-room\src(main -> origin)
+        (venv312507) λ pip install mysqlclient
+        Collecting mysqlclient
+          Using cached mysqlclient-2.2.4-cp312-cp312-win_amd64.whl.metadata (4.6 kB)
+        Using cached mysqlclient-2.2.4-cp312-cp312-win_amd64.whl (203 kB)
+        Installing collected packages: mysqlclient
+        Successfully installed mysqlclient-2.2.4
+
+        (venv312507) λ python manage.py check
+        System check identified no issues (0 silenced).

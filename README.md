@@ -145,3 +145,23 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
 
         mysql> CREATE DATABASE 80_indonesia_dj5_study_room;
         Query OK, 1 row affected (3.85 sec)
+
+#### 2. Menghubungkan proyek dengan database
+
+        DATABASES = {
+            'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'xx',
+            'USER': 'root',
+            'PASSWORD': '',
+            'HOST':'localhost',
+            'PORT':'3306',
+            }
+        }
+
+        C:\Users\ING\Desktop\80-indonesia-dj5-study-room\src(main -> origin)
+        (venv312507) λ python manage.py check
+
+        ...
+        django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
+        Did you install mysqlclient?

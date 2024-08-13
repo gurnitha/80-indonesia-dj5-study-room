@@ -73,12 +73,12 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 
 
 # Password validation
@@ -136,4 +136,15 @@ STATIC_ROOT = [BASE_DIR / 'static']
 MEDIA_URL = '/media/'
 MEDIA_ROOT = [BASE_DIR / 'media']
 
+# Database: MySQL
+DATABASES = {
+    'default': {
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': 'django_e_shopper_multivendor',
+    'USER': 'root',
+    'PASSWORD': '',
+    'HOST':'localhost',
+    'PORT':'3306',
+    }
+}
 # --------- END New added scripts --------------

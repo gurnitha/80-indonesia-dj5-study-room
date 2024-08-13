@@ -137,3 +137,6 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
         modified:   README.md
         modified:   config/settings.py
         modified:   config/urls.py
+
+
+## 4. DATABASE

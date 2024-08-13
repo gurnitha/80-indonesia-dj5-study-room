@@ -94,3 +94,14 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
         deleted:    venv312507/Scripts/python.exe
         deleted:    venv312507/Scripts/pythonw.exe
         deleted:    venv312507/pyvenv.cfg
+
+#### 2. Menseting bahasa dan waktu
+
+        # LANGUAGE_CODE = "en-us"
+        LANGUAGE_CODE = "id"
+
+        # TIME_ZONE = "UTC"
+        TIME_ZONE = "Asia/Jakarta"
+
+        modified:   README.md
+        modified:   config/settings.py

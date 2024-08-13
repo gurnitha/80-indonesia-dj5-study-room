@@ -140,7 +140,7 @@ MEDIA_ROOT = [BASE_DIR / 'media']
 DATABASES = {
     'default': {
     'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'django_e_shopper_multivendor',
+    'NAME': '80_indonesia_dj5_study_room',
     'USER': 'root',
     'PASSWORD': '',
     'HOST':'localhost',

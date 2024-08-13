@@ -140,3 +140,8 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
 
 
 ## 4. DATABASE
+
+#### 1. Membuat MySQL database
+
+        mysql> CREATE DATABASE 80_indonesia_dj5_study_room;
+        Query OK, 1 row affected (3.85 sec)

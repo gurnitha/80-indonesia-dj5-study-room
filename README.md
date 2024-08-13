@@ -105,3 +105,35 @@ Mengisi 80 tahun Kemerdekaan Indonesia dengan membuat aplikasi STUDY ROOM menggu
 
         modified:   README.md
         modified:   config/settings.py
+
+#### 3. Menseting path untuk static dan media file
+
+        # Language: Bahasa Indoneia
+        LANGUAGE_CODE = "id"
+        # Time zone: Jakarta
+        TIME_ZONE = "Asia/Jakarta"
+
+        # Path for Static files in development
+        STATIC_URL = '/static/'
+        STATIC_ROOT = [BASE_DIR / 'static'] 
+        # Path for Media files in development
+        MEDIA_URL = '/media/'
+        MEDIA_ROOT = [BASE_DIR / 'media']
+
+        # config/urls.py
+
+        from django.conf import settings
+        from django.conf.urls.static import static
+        from django.contrib import admin
+        from django.urls import path
+
+        urlpatterns = [
+            path("admin/", admin.site.urls),
+        ]
+
+        if settings.DEBUG:
+            urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
